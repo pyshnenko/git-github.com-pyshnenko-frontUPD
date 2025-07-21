@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://spamigor.ru/girls/api'; //"http://localhost:8900/girls/api";//
-console.log(baseURL);
+const baseURL = String(import.meta.env.VITE_BASEURL);
 const jsonHeader = {
   'Content-type': 'application/json',
 };

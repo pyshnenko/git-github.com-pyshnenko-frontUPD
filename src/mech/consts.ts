@@ -1,5 +1,5 @@
-import { Theme, createTheme } from "@mui/material";
-import TGtype from "@/types/tg";
+import { Theme, createTheme } from '@mui/material';
+import TGtype from '@/types/tg';
 
 export const month: string[] = [
   'Январь',
@@ -18,6 +18,7 @@ export const month: string[] = [
 
 export const darkTheme: Theme = createTheme({
   palette: {
-    mode: (window as Window & typeof globalThis & { Telegram: TGtype }).Telegram?.WebApp.colorScheme,
+    mode: (window as Window & typeof globalThis & { Telegram: TGtype }).Telegram?.WebApp
+      .colorScheme,
   },
 });

@@ -29,7 +29,7 @@ export default function DayEventsForm(props: PropsType): React.JSX.Element {
     realDateBuf.setDate(activeDay);
     setRealDate(realDateBuf);
     //console.log(events);
-  }, [activeDay]);
+  }, [activeDay, activeMonth]);
 
   return (
     <Box sx={dayEventsStyles.totalBox(activeDay)}>

@@ -46,8 +46,7 @@ export default function Events(): React.JSX.Element {
     }
     setActiveMonth(new Date());
     if (tg)
-      tg.SecondaryButton
-        .show()
+      tg.SecondaryButton.show()
         .onClick(() => {
           tg.sendData(JSON.stringify({ do: 'close' }));
         })

@@ -4,7 +4,9 @@ export const YoNevent = async (id: number, result: boolean, setActiveDay: (n: nu
   try {
     await api.events.YorN(id, result);
     setActiveDay(-1);
-  } catch (e) {console.log(e)}
+  } catch (e) {
+    console.log(e);
+  }
 };
 
 export const YoNDay = async (
